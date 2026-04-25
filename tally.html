@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+
+<title>Tally Course</title>
+
+<style>
+
+:root{
+--bg:#0f172a;
+--blue:#38bdf8;
+--dim:#94a3b8;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:system-ui;
+}
+
+body{
+
+background:
+radial-gradient(circle at top left,#1e3a8a50 0%,transparent 35%),
+radial-gradient(circle at bottom right,#2563eb30 0%,transparent 35%),
+var(--bg);
+
+color:white;
+}
+
+/* header */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:18px 8%;
+
+background:rgba(15,23,42,.88);
+
+backdrop-filter:blur(15px);
+
+border-bottom:
+1px solid rgba(255,255,255,.08);
+}
+
+.logo{
+font-size:1.3rem;
+font-weight:800;
+color:var(--blue);
+}
+
+.back-btn{
+text-decoration:none;
+color:var(--blue);
+font-weight:700;
+}
+
+
+/* hero */
+
+.hero{
+text-align:center;
+padding:70px 20px;
+}
+
+.hero h1{
+font-size:
+clamp(2.2rem,6vw,4rem);
+}
+
+.hero span{
+color:var(--blue);
+}
+
+.hero p{
+margin-top:20px;
+color:var(--dim);
+}
+
+
+/* chapter section */
+
+section{
+padding:50px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:2.2rem;
+margin-bottom:45px;
+}
+
+.chapter-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+}
+
+/* chapter card */
+
+.chapter{
+
+background:
+linear-gradient(
+145deg,
+#1e293b,
+#111827
+);
+
+padding:30px;
+
+border-radius:25px;
+
+border:
+1px solid rgba(255,255,255,.08);
+
+transition:.35s;
+}
+
+.chapter:hover{
+
+transform:
+translateY(-8px);
+
+box-shadow:
+0 12px 35px rgba(0,0,0,.3);
+
+}
+
+.chapter h3{
+color:var(--blue);
+margin-bottom:15px;
+}
+
+.chapter p{
+color:var(--dim);
+margin-bottom:25px;
+}
+
+.download{
+
+display:block;
+
+text-align:center;
+
+padding:14px;
+
+border-radius:12px;
+
+background:
+linear-gradient(
+90deg,
+#38bdf8,
+#0ea5e9
+);
+
+color:#000;
+
+font-weight:700;
+
+text-decoration:none;
+}
+
+
+/* footer */
+
+footer{
+
+margin-top:70px;
+
+padding:50px 20px;
+
+text-align:center;
+
+border-top:
+1px solid rgba(255,255,255,.08);
+
+color:var(--dim);
+}
+
+footer h3{
+color:var(--blue);
+margin-bottom:10px;
+}
+
+
+/* mobile */
+
+@media(max-width:768px){
+
+header{
+padding:16px 5%;
+}
+
+section{
+padding:50px 5%;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+
+
+<header>
+
+<div class="logo">
+TALLY COURSE
+</div>
+
+<a href="index.html"
+class="back-btn">
+
+← Back Home
+
+</a>
+
+</header>
+
+
+
+<div class="hero">
+
+<h1>
+
+Learn
+<span>
+Tally Prime
+</span>
+
+Step by Step
+
+</h1>
+
+<p>
+
+Notes, Practical Files and
+Chapter-wise Materials
+
+</p>
+
+</div>
+
+
+
+<section>
+
+<h2 class="section-title">
+Course Modules
+</h2>
+
+
+<div class="chapter-grid">
+
+
+<div class="chapter">
+
+<h3>
+Chapter 1
+Introduction to Tally
+</h3>
+
+<p>
+Basics and Interface
+</p>
+
+<a
+href="files/tally1.pdf"
+download
+class="download">
+
+Download Notes
+
+</a>
+
+</div>
+
+
+
+<div class="chapter">
+
+<h3>
+Chapter 2
+Company Creation
+</h3>
+
+<p>
+Create and Configure Company
+</p>
+
+<a
+href="files/tally2.pdf"
+download
+class="download">
+
+Download Notes
+
+</a>
+
+</div>
+
+
+
+<div class="chapter">
+
+<h3>
+Chapter 3
+Ledger Creation
+</h3>
+
+<p>
+Groups and Ledger Practical
+</p>
+
+<a
+href="files/tally3.pdf"
+download
+class="download">
+
+Download Notes
+
+</a>
+
+</div>
+
+
+
+<div class="chapter">
+
+<h3>
+Chapter 4
+Voucher Entry
+</h3>
+
+<p>
+Payment, Receipt, Contra
+</p>
+
+<a
+href="files/tally4.pdf"
+download
+class="download">
+
+Download Notes
+
+</a>
+
+</div>
+
+
+
+<div class="chapter">
+
+<h3>
+Chapter 5
+Inventory
+</h3>
+
+<p>
+Stock Items and Units
+</p>
+
+<a
+href="files/tally5.pdf"
+download
+class="download">
+
+Download Notes
+
+</a>
+
+</div>
+
+
+
+<div class="chapter">
+
+<h3>
+Chapter 6
+Final Accounts
+</h3>
+
+<p>
+P&L and Balance Sheet
+</p>
+
+<a
+href="files/tally6.pdf"
+download
+class="download">
+
+Download Notes
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<h3>
+Sourav Study Portal
+</h3>
+
+<p>
+Tally Practical Learning Resources
+</p>
+
+</footer>
+
+
+</body>
+</html>
